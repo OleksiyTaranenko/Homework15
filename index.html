@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 15</title>
+    <link rel="stylesheet" href="./style/custom.css">
+</head>
+
+<body>
+    <h1 class="heading">CALCULATOR</h1>
+    <div class="calculator">
+        <div class="item numbersInputContainer">
+            <form id="formInput" name="form"><input class="numbersInput" type="text" name="entryField"></form>
+        </div>
+        <div class="item cleanAll" onclick="calculator.cleanAllField('')">C</div>
+        <div class="item deleteOneSymbol" onclick="calculator.deleteSymbols('') ">&#129060;</div>
+        <div class="item" onclick="calculator.putItems('+')">&#43;</div>
+        <div class="item" onclick="calculator.putItems('-')">&#8722;</div>
+        <div class="item" onclick="calculator.putItems('*')">&#215;</div>
+        <div class="item" onclick="calculator.putItems('/')">&#247;</div>
+        <div class="item" onclick="calculator.putItems('7')">7</div>
+        <div class="item" onclick="calculator.putItems('8')">8</div>
+        <div class="item" onclick="calculator.putItems('9')">9</div>
+        <div class="item" onclick="calculator.putItems('(')">(</div>
+        <div class="item" onclick="calculator.putItems('4')">4</div>
+        <div class="item" onclick="calculator.putItems('5')">5</div>
+        <div class="item" onclick="calculator.putItems('6')">6</div>
+        <div class="item" onclick="calculator.putItems(')')">)</div>
+        <div class="item" onclick="calculator.putItems('1')">1</div>
+        <div class="item" onclick="calculator.putItems('2')">2</div>
+        <div class="item" onclick="calculator.putItems('3')">3</div>
+        <div class="item equally" onclick="calculator.equate('')">=</div>
+        <div class="item zero" onclick="calculator.putItems('0')">0</div>
+        <div class="item" onclick="calculator.putItems('.')">.</div>
+    </div>
+
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>
